@@ -1,0 +1,21 @@
+/**index.wxss**/
+scroll-view{
+  font-size: 12pt;
+  font-family: cursive;
+}
+.swiper{
+box-sizing:border-box;
+padding:0 80rpx;
+}
+/*折叠内容  */
+.foldView{
+
+}
+.foldTitle{
+height: 50rpx;
+padding-left: 20rpx;
+padding-top: 20rpx;
+}
+.foldContent{
+
+}
