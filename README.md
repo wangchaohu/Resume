@@ -1,2 +1,2 @@
-# WxSmallProgram
-微信小程序demo
+# Resume
+简历小程序
