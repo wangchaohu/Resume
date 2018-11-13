@@ -1,0 +1,9 @@
+<template name="item">
+<view >
+<label>是的{{foldContent}}</label>
+</view>
+<view class='itemView'>
+<navigator class='detail' url='../detail/detail'>查看详细</navigator><navigator class='detail' url='../webdemo/webdemo'>查看demo</navigator>
+</view>
+<view class='divLine'></view>
+</template>

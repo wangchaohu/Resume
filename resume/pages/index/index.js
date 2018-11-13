@@ -14,14 +14,26 @@ Page({
     interval: 5000,
     duration: 1000,
     circular:true,
-    // 折叠view标题
-    isFold:false,
-    foldTitle:'这是一个折叠面板',
-    foldContent:'折叠内容'
+    // 折叠view标题,默认第一个展开
+    isFold: [false, true, true],
+    foldimg: ['../images/up.svg', '../images/down.svg','../images/down.svg'],
+    foldTitle: ['折叠1', '折叠2', '折叠3'],
+    foldContent:'折叠内容折叠内容折叠内容折叠内容折叠内容折叠内容折叠内容折叠内容折叠内容折叠内容折叠内容折叠内容折叠内容折叠内容折叠内容'
   },
+
+
   changeFold: function (e) {
+    var index = e.currentTarget.dataset.index;
+    
+    this.data.isFold= [true,true,true];
+    this.data.foldimg = ['../images/down.svg', '../images/down.svg','../images/down.svg'];
+
+    this.data.isFold[index] = false;
+    this.data.foldimg[index] = '../images/up.svg';
+
     this.setData({
-      isFold: !this.data.isFold
+      isFold: this.data.isFold,
+      foldimg:this.data.foldimg
     });
   }
 })
